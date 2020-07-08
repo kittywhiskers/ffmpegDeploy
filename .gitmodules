@@ -1,0 +1,3 @@
+[submodule "ffmpegScripts"]
+	path = ffmpegScripts
+	url = https://github.com/kittywhiskers/ffmpegScripts
