@@ -1,1 +1,1 @@
-web: bash $PWD/launchScript.sh
+web: $PWD/launchScript.sh

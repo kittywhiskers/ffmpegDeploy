@@ -1,1 +1,1 @@
-echo '<?php include_once("embed.html"); ?>' > index.php
+<?php include_once("embed.html"); ?>
