@@ -8,3 +8,6 @@ A live example of using `ffmpegLoopVideo.sh` with YouTube to deliver a high qual
 
 Source: [ffmpeg: Loop video to the length of audio](https://video.stackexchange.com/a/23394)
 
+### Additional Source
+
+[Penguin Vector Image Source](https://4vector.com/free-vector/dancing-penguins-99210)

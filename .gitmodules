@@ -1,3 +1,6 @@
 [submodule "ffmpegScripts"]
 	path = ffmpegScripts
 	url = https://github.com/kittywhiskers/ffmpegScripts
+[submodule "nunito"]
+	path = nunito
+	url = https://github.com/googlefonts/nunito
