@@ -6,7 +6,7 @@ export PATH=$PWD/ffmpegBins:$PATH
 chmod +x ./ffmpegBins/ffmpeg
 chmod +x $PWD/generateAsset.sh && $PWD/generateAsset.sh
 # Start streaming in the background and show us it is doing the job
-$PWD/ffmpegScripts/ffmpegLoopStream.sh $PWD/assets/deployedStream.mp4 24 1080 $SITE_ACCESS_KEY veryfast 26 &
+$PWD/ffmpegScripts/ffmpegLoopStream.sh $PWD/assets/deployedStream.mp4 20 720 $SITE_ACCESS_KEY veryfast 26 &
 jobs
 # Start PHP server
 vendor/bin/heroku-php-apache2
