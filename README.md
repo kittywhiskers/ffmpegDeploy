@@ -1,13 +1,13 @@
-## ffmpegDeploy
+# ffmpegDeploy
 
 A live example of using `ffmpegLoopVideo.sh` with YouTube to deliver a high quality stream for no good reason.
 
-### Asset Generation Script
+## Recommended Reading
 
-`ffmpeg  -stream_loop -1 -i ./assets/Record_Spinning_Rack_Focus_2.mp4 -c copy -v 0 -f nut - | ffmpeg -thread_queue_size 100K -i - -i ./assets/Lift\ Yourself\ but\ lo-fi\'ed.mp3 -t $(sox ./assets/Lift\ Yourself\ but\ lo-fi\'ed.mp3 -n stat 2>&1 | sed -n 's#^Length (seconds):[^0-9]*\([0-9.]*\)$#\1#p') -c copy -map 0:v -map 1:a -shortest -y ./assets/deployedStream.mp4`
+- [ffmpeg: Loop video to the length of audio](https://video.stackexchange.com/a/23394)
+- [4vector: dancing penguins](https://4vector.com/free-vector/dancing-penguins-99210)
 
-Source: [ffmpeg: Loop video to the length of audio](https://video.stackexchange.com/a/23394)
+## Additional works used
 
-### Additional Source
-
-[Penguin Vector Image Source](https://4vector.com/free-vector/dancing-penguins-99210)
+- `assets/sampleAudio.mp3` is Kriss'es _Jazz Club_, [available from the Free Music Archive](https://freemusicarchive.org/music/Kriss/nomad_ep/unfound38_03_-_kriss_-_jazz_club). Made available under the Creative Commons Attribution-NoDerivatives 3.0 International License.
+- `assets/Record_Spinning_Rack_Focus_2.mp4` is Christophert Larsen's _Record Spinning Rack Focus 2_, available from [Videvo](https://www.videvo.net/video/record-spinning-rack-focus-2/4243/). Made available under the Videvo Standard License
